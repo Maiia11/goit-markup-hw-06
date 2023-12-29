@@ -243,24 +243,51 @@ overflow: hidden;
 
 .post-secondary-section{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 72px;
 }
 
-.post-secondary-list{
-    width: calc((100% - 72px) / 4);
+@media screen and (min-width: 768px) {
+    .post-secondary-section {
+        gap: 72px 24px;
+    }
 }
+
+@media screen and (min-width: 1158px) {
+    .post-secondary-section {
+        gap: 24px;
+}
+}
+
 .secondary-list-wrapper{
-    padding: 24px 24px;
-    border-radius: 4px;
-    border: 1px solid #8E8F99;
-    background: #F4F4FD;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
+    display: none;
 }
+
+@media screen and (min-width: 768px) {
+    .post-secondary-list{
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .post-secondary-list {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .secondary-list-wrapper {
+        padding: 24px 24px;
+        border-radius: 4px;
+        border: 1px solid #8E8F99;
+        background: #F4F4FD;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+}
+}
+
 
 
 .post-title-secondary{
