@@ -107,9 +107,7 @@ img {
     text-transform: uppercase;
     line-height: 1.17;
     color: #4d5ae5;
-    /*margin-right: 76px;*/
     margin-right: 120px;
-
     padding: 16px;
     
 }
@@ -210,9 +208,12 @@ img {
 }
 
 /* SECTION 1*/
+
 .post-section{
-    padding: 188px 0 188px;
+    padding: 16px;
+    padding-top: 72px;
 }
+
 
 .post-section{
     background: #2E2F42;
@@ -231,14 +232,33 @@ img {
 .post-section-title{
     color: #FFF;
     text-align: center;
-    font-size: 56px;
     font-weight: 700;
-    letter-spacing: 1.12px;
-    line-height: 1.07;
     max-width: 496px;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto; 
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+        
+}
+
+@media screen and (min-width: 768px) {
+    .post-section-title{
+        font-size: 56px;
+        line-height: 1.07;
+        margin-top: 112px;
+        margin-bottom: 36px;
+    }
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .post-section-title {
+        margin-top: 188px;
+        margin-bottom: 48px;
+    }
+
 }
 
 .post-section-button{
@@ -256,7 +276,22 @@ img {
     height: 56px;
     border: none;
     margin: 0 auto;
+    margin-bottom: 72px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .post-section-button{
+        margin-bottom: 112px;
+    }
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .post-section-button {
+        margin-bottom: 188px;
+    }
+
 }
 
 .post-section-button:hover, .post-section-button:focus{
@@ -537,29 +572,88 @@ margin-bottom: 72px;
 
 .post-footer{
     background: #2E2F42;
-    padding: 100px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
 }
 
-.footer-container{
-display: flex;
-align-items: baseline;
+@media screen and (max-width: 767.98px){
+    .post-footer{
+        text-align: center;
+    }
 }
+
+/*@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+    .post-footer {
+        padding-left: 108px;
+        padding-right: 108px;
+        
+    }
+}*/
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        padding-left: 108px;
+        padding-right: 108px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+}
+}
+
+@media screen and (min-width: 1158px){
+    .footer-container{
+        /*padding: 0 auto;*/
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .post-footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+}
+}
+
 
 .footer-article{
     display: block;
     margin-right: 120px
 }
+
+@media screen and (max-width: 767.98px) {
+    .footer-article {
+        margin-bottom: 72px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .footer-article{
+        max-width: 200px;
+    }
+}
     
 
 
 .logo-footer{
-display: flex;
+/*display: flex;*/
+display: block;
 margin-bottom: 16px;
+
 }
 
-.post-footer-text{
+/*.post-footer-text{
     display: block;
-}
+    /*margin-bottom: 72px;
+}*/
 
 .logo-span-footer{
     color: #F4F4FD;
@@ -576,9 +670,18 @@ margin-bottom: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
     width: 264px;
-   /display: flex;
+    display: flex;
+    text-align: left;
 }
  
+@media screen and (max-width: 767.98px) {
+    .footer-socials {
+        margin-bottom: 72px;
+    }
+
+}
+
+
 
 .footer-social-caption{
     color: #FFF;
@@ -602,6 +705,7 @@ margin-bottom: 16px;
     width: 40px;
     height: 40px;
     display: flex;
+    
 }
 
 .footer-socials-link{
@@ -623,9 +727,13 @@ margin-bottom: 16px;
     background-color: #31d0aa;
 }
 
-.footer-wrapper{
-    margin-left: auto;
+@media screen  and (min-width: 1158px) {
+    .footer-wrapper {
+            margin-left: auto;
+        }
 }
+
+
 .wrapper-caption{
     margin-bottom: 16px;
     color: #FFF;
@@ -635,8 +743,32 @@ margin-bottom: 16px;
 }
 .subscribe-form{
     display: flex;
-    align-items: center;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    justify-content: center;
+    
+}
+
+@media screen and (min-width: 1158px){
+    .subscribe-form{
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 24px;
+    }
+
+}
+
+.subscribe-form-field{
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-form-field{
+        max-width: 264px;
+        margin-right: 24px;
+    }
+    
 }
 
 .subscribe-form-input{
