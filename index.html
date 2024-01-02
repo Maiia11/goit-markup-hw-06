@@ -116,7 +116,10 @@
                 <h2 class="post-section-three-title">Our Team</h2>
                 <ul class="title-list">
                     <li class="post-title-list">
-                        <img src="./images/img1.jpg" alt="man with a thick beard in a shirt on a white background "
+                        <img srcset="
+                           ./images/img1.jpg 1x, 
+                           ./images/img1@2x.jpg 2x"
+                        src="./images/img1.jpg" alt="man with a thick beard in a shirt on a white background "
                         width="264"/>
                         <div class="article-title-list">
                         <h3 class="post-title-secondary">Mark Guerrero</h3>
@@ -154,7 +157,11 @@
                         </div>
                     </li>
                     <li class="post-title-list">
-                        <img src="./images/img2.jpg" alt="smiling man in a blue shirt" width="264"/>
+                        <img
+                        srcset="
+                           ./images/img2.jpg 1x, 
+                           ./images/img2@2x.jpg 2x" 
+                        src="./images/img2.jpg" alt="smiling man in a blue shirt" width="264"/>
                         <div class="article-title-list">
                         <h3 class="post-title-secondary">Tom Ford</h3>
                         <p class="post-text">Frontend Developer</p>
@@ -191,7 +198,11 @@
                         </div>
                     </li>
                     <li class="post-title-list">
-                        <img src="./images/img3.jpg" alt="girl in a pink sweater" width="264"/>
+                        <img 
+                        srcset="
+                           ./images/img3.jpg 1x, 
+                           ./images/img3@2x.jpg 2x"
+                        src="./images/img3.jpg" alt="girl in a pink sweater" width="264"/>
                         <div class="article-title-list">
                         <h3 class="post-title-secondary">Camila Garcia</h3>
                         <p class="post-text">Marketing</p>
@@ -228,7 +239,11 @@
                         </div>
                     </li>
                     <li class="post-title-list">
-                        <img src="./images/img4.jpg" alt="smiling man in a gray t-shirt" width="264"/>
+                        <img 
+                        srcset="
+                           ./images/img4.jpg 1x, 
+                           ./images/img4@2x.jpg 2x"
+                        src="./images/img4.jpg" alt="smiling man in a gray t-shirt" width="264"/>
                         <div class="article-title-list">
                         <h3 class="post-title-secondary">Daniel Wilson</h3>
                         <p class="post-text">UI Designer</p>
@@ -405,7 +420,7 @@
         </footer>
        
         <!--Modal window-->
-        <div class="backdrop is-open">
+        <div class="backdrop">
             <div class="backdrop-modal">
                 <button class="modal-btn" type="button" aria-label="Modal close button">
                     <svg class="modal-btn-icon" width="8" height="8">
